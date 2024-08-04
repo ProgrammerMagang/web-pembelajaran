@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SejarahKita - Belajar Sejarah Indonesia Masa Hindu-Buddha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .nav-menu a {
+            position: relative;
+            text-decoration: none;
+            color: #fff; /* Warna teks putih */
+            padding: 10px 15px;
+            background-color: transparent; /* Menghilangkan latar belakang */
+            border-radius: 5px; /* Sudut membulat */
+            transition: transform 0.2s ease, color 0.3s ease; /* Hanya transisi warna */
+        }
+
+        .nav-menu a:hover {
+            color: #a6a9ff; /* Mengubah warna teks saat hover */
+        }
+
+        .nav-menu a:active,
+        .nav-menu a.active { /* Menambahkan kelas active */
+            transform: scale(0.95); /* Efek mengecil saat diklik */
+            color: #9498ff; /* Warna teks saat aktif */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-landmark"></i>
+                <span>SejarahKita</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home" style="color: #b5b9ff;"></i> Beranda</a></li>
+                <li><a href="materi.html"><i class="fas fa-book" style="color: #b5b9ff;"></i> Materi</a></li>
+                <li><a href="kuis.html"><i class="fas fa-question-circle" style="color: #b5b9ff;"></i> Kuis</a></li>
+                <li><a href="video.html"><i class="fas fa-video" style="color: #b5b9ff;"></i> Video</a></li>
+                <li><a href="tentang.html"><i class="fas fa-info-circle" style="color: #b5b9ff;"></i> Tentang</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Jelajahi Sejarah Indonesia Masa Hindu-Buddha</h1>
+            <p>Temukan keajaiban peradaban kuno Nusantara melalui pembelajaran interaktif</p>
+            <a href="materi.html" class="cta-button">Mulai Belajar</a>
+        </section>
+
+        <section class="features">
+            <h2>Fitur Unggulan</h2>
+            <div class="feature-container">
+                <div class="feature-card">
+                    <a href="materi.html">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Materi Komprehensif</h3>
+                        <p>Pelajari sejarah dengan materi yang lengkap dan mudah dipahami</p>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <a href="video.html">
+                        <i class="fas fa-video"></i>
+                        <h3>Video Pembelajaran</h3>
+                        <p>Tonton video menarik tentang berbagai aspek sejarah Hindu-Buddha</p>
+                    </a>
+                </div>
+                <div class="feature-card">
+                    <a href="kuis.html">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Kuis Interaktif</h3>
+                        <p>Uji pengetahuan Anda dengan kuis yang menantang dan edukatif</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SejarahKita. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

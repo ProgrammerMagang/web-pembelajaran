@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang SejarahKita</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .about-section {
+            background-color: #e0f7fa; /* Warna pastel biru */
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .developer-info {
+            background-color: #ffe0b2; /* Warna pastel oranye */
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem; /* Tambahkan margin bawah untuk jarak */
+        }
+        .contact-info {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info a i {
+            margin-right: 0.5rem;
+        }
+        .nav-menu a {
+            position: relative;
+            text-decoration: none;
+            color: #fff; /* Warna teks putih */
+            padding: 10px 15px;
+            background-color: transparent; /* Menghilangkan latar belakang */
+            border-radius: 5px; /* Sudut membulat */
+            transition: transform 0.2s ease, color 0.3s ease; /* Hanya transisi warna */
+        }
+
+        .nav-menu a:hover {
+            color: #a6a9ff; /* Mengubah warna teks saat hover */
+        }
+
+        .nav-menu a:active,
+        .nav-menu a.active { /* Menambahkan kelas active */
+            transform: scale(0.95); /* Efek mengecil saat diklik */
+            color: #9498ff; /* Warna teks saat aktif */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-landmark"></i>
+                <span>SejarahKita</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home" style="color: #b5b9ff;"></i> Beranda</a></li>
+                <li><a href="materi.html"><i class="fas fa-book" style="color: #b5b9ff;"></i> Materi</a></li>
+                <li><a href="kuis.html"><i class="fas fa-question-circle" style="color: #b5b9ff;"></i> Kuis</a></li>
+                <li><a href="video.html"><i class="fas fa-video" style="color: #b5b9ff;"></i> Video</a></li>
+                <li><a href="tentang.html" class="active"><i class="fas fa-info-circle" style="color: #b5b9ff;"></i> Tentang</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h1>Tentang SejarahKita</h1>
+            <p>SejarahKita adalah platform pembelajaran interaktif yang didedikasikan untuk mempelajari sejarah Indonesia pada masa Hindu-Buddha. Kami bertujuan untuk membuat pembelajaran sejarah menjadi menarik dan mudah diakses bagi semua kalangan.</p>
+            
+            <h2>Visi Kami</h2>
+            <p>Menjadi sumber utama pembelajaran sejarah Indonesia yang interaktif, akurat, dan menginspirasi generasi muda untuk menghargai warisan budaya bangsa.</p>
+            
+            <h2>Misi Kami</h2>
+            <ul>
+                <li>Menyediakan materi pembelajaran sejarah yang komprehensif dan mudah dipahami</li>
+                <li>Mengembangkan metode pembelajaran interaktif melalui video dan kuis</li>
+                <li>Mendorong apresiasi terhadap kekayaan sejarah dan budaya Indonesia</li>
+                <li>Berkolaborasi dengan sejarawan dan institusi pendidikan untuk menjamin akurasi informasi</li>
+            </ul>
+        </section>
+
+        <section class="developer-info">
+            <h2>Tentang Pengembang</h2>
+            <p><strong>Rafid Ari Martdana</strong></p>
+            <p>Mahasiswa Prodi Pendidikan Sejarah</p>
+            <p>Universitas Negeri Semarang</p>
+
+            <div class="contact-info">
+                <h3>Kontak Kami</h3>
+                <a href="mailto:arirafid@students.unnes.ac.id">
+                    <i class="fas fa-envelope"></i> arirafid@students.unnes.ac.id
+                </a>
+                <a href="https://wa.me/6285156411507" target="_blank">
+                    <i class="fab fa-whatsapp"></i> 085156411507
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SejarahKita. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
